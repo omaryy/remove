@@ -1,0 +1,69 @@
+  private void canvas1MouseClicked(java.awt.event.MouseEvent evt) {                                     
+      Point p=new Point();
+      p.x=evt.getX();
+      p.y=evt.getY();
+       
+           for(int i=0;i<containRectangle.size();i++)
+           {
+             if(containRectangle.get(i).contains(p))  
+             {
+                 if(jRadioButton8.isSelected())
+                 {
+                     containRectangle.remove(i);
+                     canvas1.update(g2);
+                       Drawall();
+                 }
+             }
+             
+           }
+           for(int i=0;i<containsquare.size();i++)
+           {
+             if(containsquare.get(i).contains(p))  
+             {
+                 if(jRadioButton8.isSelected())
+                 {
+                     containsquare.remove(i);
+                     canvas1.update(g2);
+                    Drawall();
+                 }
+             }
+           } 
+            for(int i=0;i<circcontainer.size();i++)
+           {
+             if(circcontainer.get(i).contains(p))  
+             {
+                 if(jRadioButton8.isSelected())
+                 {
+                     circcontainer.remove(i);
+                     canvas1.update(g2);
+                    Drawall();
+                 }
+             }
+           } 
+             for(int i=0;i<Elipsecontainer.size();i++)
+           {
+             if(Elipsecontainer.get(i).contains(p))  
+             {
+                 if(jRadioButton8.isSelected())
+                 {
+                     Elipsecontainer.remove(i);
+                     canvas1.update(g2);
+                    Drawall();
+                 }
+             }
+           }
+              for(int i=0;i<containertrainglr.size();i++)
+           {
+             if(containertrainglr.get(i).contains(p))  
+             {
+                 if(jRadioButton8.isSelected())
+                 {
+                     containertrainglr.remove(i);
+                     canvas1.update(g2);
+                    Drawall();
+                 }
+             }
+           }  
+       
+    }                                    
+ 
